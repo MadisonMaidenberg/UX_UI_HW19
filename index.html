@@ -2,6 +2,28 @@
 <html>
     <head>
         <link rel="styleSheet" href="CSS/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  border: solid 1px white;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+        
         <title>Portfolio Madison Maidenberg </title>
     </head>
     <body>
@@ -21,6 +43,9 @@
 
       </header>
 
+      <div id="flip">My interactional slidedown using Jquery</div>
+      <div id="panel">Whoo hoo! It slid!</div>       
+
       <section class="heroImg">
           <div class="content">
               <img src="Images/Mads copy.png" alt="imgage of Madison" height="300" width="235">
@@ -30,6 +55,7 @@
                   needs to create powerful & delightful design interactions.</p>
               <button>Download Resume</button>
           </div>
+          
       </section>
       <footer class=foot1>
           <ul class="footer">
